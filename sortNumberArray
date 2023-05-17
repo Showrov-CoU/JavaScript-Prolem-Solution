@@ -1,0 +1,13 @@
+// .................Number Array Sort..................
+
+const prompt = require("prompt-sync")();
+let range = prompt("How many numbers would you like to put in array: ");
+const array = [];
+
+for (let i = 0; i < range; i++) {
+  array.push(prompt("Enter a number: "));
+}
+array.sort(function (a, b) {
+  return a - b;
+});
+console.log(array);
